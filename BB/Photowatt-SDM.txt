@@ -1,0 +1,74 @@
+Constants
+    N = 25;// number of measures
+    // Data for output voltage in V
+    VD[N] = (0.1248; 
+            1.8093; 
+            3.3511;
+            4.7622;
+            6.0538;
+            7.2364;
+            8.3189;
+            9.3097;
+            10.2163;
+            11.0449;
+            11.8018;
+            12.4929;
+            13.1231;
+            13.6983;
+            14.2221;
+            14.6995;
+            15.1346;
+            15.5311;
+            15.8929;
+            16.2229;
+            16.5241;
+            16.7987;
+            17.0499;
+            17.2793;
+            17.4885);
+    // Data for output current in A
+    ID[N] = (1.0315;
+            1.03;
+            1.026;
+            1.022;
+            1.018;
+            1.0155;
+            1.014;
+            1.01;
+            1.0035;
+            0.988;
+            0.963;
+            0.9255;
+            0.8725;
+            0.8075;
+            0.7265;
+            0.6345;
+            0.5345;
+            0.4275;
+            0.3185;
+            0.2085;
+            0.101;
+            -0.008;
+            -0.111;
+            -0.209;
+            -0.303);
+    k = 1.3806503e-23;// Boltzmann constant in J/K
+    T = 45 + 273.15;// Cell temperature in K
+    q = 1.60217646e-19;// Magnitude of charge on an electron in C
+
+Variables
+    Iph in [0,2];   // Photo-generated current in A
+    I0 in [0,50];   // Reverse saturation current in uA
+    n in [1,50];        // Diode ideality factor
+    Rs in [0,2];    // Series resistance in ohm
+    Rp in [0,20];   // Shunt resistance in hundred-ohm
+    
+// single diode model (SDM)
+function model_sdm(V, I, Iph, I0, n, Rs, Rp)
+    tmp = V+ I*Rs;
+    return Iph - I0*1e-6*(exp(q*tmp/(n*k*T)) - 1) - tmp/(100*Rp);
+end
+
+// minimizer the SSE
+Minimize
+    sum(i = 1:N, (ID(i) - model_sdm(VD(i),ID(i), Iph, I0, n, Rs, Rp))^2);

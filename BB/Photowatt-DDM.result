@@ -1,0 +1,74 @@
+
+************************ setup ************************
+  file loaded:		Photowatt-DDM.txt
+  output COV file:	Photowatt-DDM.cov
+  timeout:		3600s
+*******************************************************
+
+running............
+
+[31m time limit 3600s. reached 
+[0m
+ f* in	[-0,8.65321702689e-05]
+	(best bound)
+
+ x* =	(1.03431507682 ; 2.50783313384e-24 ; 0.837646802932 ; 9.41956954928 ; 43.8625290414 ; 1.4762584231 ; 5.77619506834)
+	(best feasible point)
+
+ relative precision on f*:	inf
+ absolute precision on f*:	8.65321702689e-05
+ cpu time used:			3599.99624901s
+ number of cells:		979844
+
+ results written in Photowatt-DDM.cov
+ (old file saved in Photowatt-DDM.cov~)
+
+************************ setup ************************
+  file loaded:		Photowatt-DDM.txt
+  input COV file:	Photowatt-DDM.cov
+  output COV file:	Photowatt-DDM.cov
+  timeout:		36000s
+*******************************************************
+
+running............
+
+[31m time limit 36000s. reached 
+[0m
+ f* in	[-0,6.55012363155e-05]
+	(best bound)
+
+ x* =	(1.0339286971 ; 1.8657547201e-23 ; 0.535399234849 ; 9.58860778809 ; 42.6724488388 ; 1.63619822583 ; 6.07690281231)
+	(best feasible point)
+
+ relative precision on f*:	inf
+ absolute precision on f*:	6.55012363155e-05
+ cpu time used:			35999.9949981s [total=39599.9912471]
+ number of cells:		8034580 [total=9014424]
+
+ results written in Photowatt-DDM.cov
+ (old file saved in Photowatt-DDM.cov~)
+
+************************ setup ************************
+  file loaded:		Photowatt-DDM.txt
+  input COV file:	Photowatt-DDM.cov
+  output COV file:	Photowatt-DDM.cov
+  timeout:		3600s
+*******************************************************
+
+running............
+
+[31m time limit 3600s. reached 
+[0m
+ f* in	[-0,6.55012363155e-05]
+	(best bound)
+
+ x* =	(1.0339286971 ; 1.8657547201e-23 ; 0.535399234849 ; 9.58860778809 ; 42.6724488388 ; 1.63619822583 ; 6.07690281231)
+	(best feasible point)
+
+ relative precision on f*:	inf
+ absolute precision on f*:	6.55012363155e-05
+ cpu time used:			3599.98941101s [total=43199.9806581]
+ number of cells:		826672 [total=9841096]
+
+ results written in Photowatt-DDM.cov
+ (old file saved in Photowatt-DDM.cov~)

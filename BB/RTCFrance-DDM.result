@@ -1,0 +1,50 @@
+
+************************ setup ************************
+  file loaded:		RTCFrance-DDM.txt
+  output COV file:	RTCFrance-DDM.cov
+  timeout:		3600s
+*******************************************************
+
+running............
+
+[31m time limit 3600s. reached 
+[0m
+ f* in	[-0,2.53067317054e-05]
+	(best bound)
+
+ x* =	(0.760683858645 ; 0.941258433562 ; 0.17733250411 ; 1.9453125 ; 1.43155420301 ; 0.0369799129584 ; 0.563710804739)
+	(best feasible point)
+
+ relative precision on f*:	inf
+ absolute precision on f*:	2.53067317054e-05
+ cpu time used:			3599.99615101s
+ number of cells:		787622
+
+ results written in RTCFrance-DDM.cov
+ (old file saved in RTCFrance-DDM.cov~)
+
+************************ setup ************************
+  file loaded:		RTCFrance-DDM.txt
+  input COV file:	RTCFrance-DDM.cov
+  output COV file:	RTCFrance-DDM.cov
+  timeout:		82800s
+*******************************************************
+
+running............
+
+[31m time limit 82800s. reached 
+[0m
+ f* in	[-0,2.51532659603e-05]
+	(best bound)
+
+ x* =	(0.760815738919 ; 0.217867184041 ; 0.78145499533 ; 1.44827388213 ; 1.9818316676 ; 0.0367359827333 ; 0.558931982861)
+	(best feasible point)
+
+ relative precision on f*:	inf
+ absolute precision on f*:	2.51532659603e-05
+ cpu time used:			82799.9963821s [total=86399.9925331]
+ number of cells:		24428596 [total=25216218]
+
+ results written in RTCFrance-DDM.cov
+ (old file saved in RTCFrance-DDM.cov~)
+

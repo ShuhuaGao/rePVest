@@ -1,0 +1,177 @@
+************************ setup ************************
+  file loaded:		Photowatt-SDM.txt
+  output COV file:	Photowatt-SDM.cov
+  timeout:		20000s
+*******************************************************
+
+running............
+
+[31m time limit 20000s. reached 
+[0m
+ f* in	[0.000137557643,0.000147032692848]
+	(best bound)
+
+ x* =	(1.0305486041 ; 3.46229921383 ; 48.6208712763 ; 1.20187490244 ; 9.76055231475)
+	(best feasible point)
+
+ relative precision on f*:	0.0688805772016
+ absolute precision on f*:	9.47504984827e-06
+ cpu time used:			19999.9990211s
+ number of cells:		20499094
+
+ results written in Photowatt-SDM.cov
+ (old file saved in Photowatt-SDM.cov~)
+
+************************ setup ************************
+  file loaded:		Photowatt-SDM.txt
+  input COV file:	Photowatt-SDM.cov
+  output COV file:	Photowatt-SDM.cov
+  timeout:		3600s
+*******************************************************
+
+running............
+
+[31m time limit 3600s. reached 
+[0m
+ f* in	[0.000141777057559,0.000147031017749]
+	(best bound)
+
+ x* =	(1.0305486041 ; 3.46261842931 ; 48.6211731367 ; 1.20187490244 ; 9.76055231475)
+	(best feasible point)
+
+ relative precision on f*:	0.037057901194
+ absolute precision on f*:	5.25396019057e-06
+ cpu time used:			3599.99782201s [total=23599.9968431]
+ number of cells:		4377374 [total=24876468]
+
+ results written in Photowatt-SDM.cov
+ (old file saved in Photowatt-SDM.cov~)
+
+************************ setup ************************
+  file loaded:		Photowatt-SDM.txt
+  input COV file:	Photowatt-SDM.cov
+  output COV file:	Photowatt-SDM.cov
+  timeout:		3600s
+*******************************************************
+
+running............
+
+[31m time limit 3600s. reached 
+[0m
+ f* in	[0.000144081832184,0.000147028278319]
+	(best bound)
+
+ x* =	(1.03050545329 ; 3.47608727583 ; 48.6359597643 ; 1.20142348657 ; 9.82339944938)
+	(best feasible point)
+
+ relative precision on f*:	0.0204498102932
+ absolute precision on f*:	2.94644613485e-06
+ cpu time used:			3599.99817801s [total=27199.9950211]
+ number of cells:		4344474 [total=29220942]
+
+ results written in Photowatt-SDM.cov
+ (old file saved in Photowatt-SDM.cov~)
+
+************************ setup ************************
+  file loaded:		Photowatt-SDM.txt
+  input COV file:	Photowatt-SDM.cov
+  output COV file:	Photowatt-SDM.cov
+  timeout:		3600s
+*******************************************************
+
+running............
+
+[31m time limit 3600s. reached 
+[0m
+ f* in	[0.000145435682011,0.00014702628353]
+	(best bound)
+
+ x* =	(1.03051178922 ; 3.47842968393 ; 48.6385091829 ; 1.20142348657 ; 9.82339944938)
+	(best feasible point)
+
+ relative precision on f*:	0.0109368037933
+ absolute precision on f*:	1.5906015187e-06
+ cpu time used:			3599.99911801s [total=30799.9941391]
+ number of cells:		4404676 [total=33625618]
+
+ results written in Photowatt-SDM.cov
+ (old file saved in Photowatt-SDM.cov~)
+
+************************ setup ************************
+  file loaded:		Photowatt-SDM.txt
+  input COV file:	Photowatt-SDM.cov
+  output COV file:	Photowatt-SDM.cov
+  timeout:		36000s
+*******************************************************
+
+running............
+
+[32m optimization successful!
+[0m
+ f* in	[0.000146878034805,0.00014702491284]
+	(best bound)
+
+ x* =	(1.03052020484 ; 3.48287904343 ; 48.6435574734 ; 1.20123680201 ; 9.8126369078)
+	(best feasible point)
+
+ relative precision on f*:	0.001[32m [passed] [0m
+ absolute precision on f*:	1.46878034805e-07
+ cpu time used:			8124.99925001s [total=38924.9933891]
+ number of cells:		10899922 [total=44525540]
+
+ results written in Photowatt-SDM.cov
+ (old file saved in Photowatt-SDM.cov~)
+
+************************ setup ************************
+  file loaded:		Photowatt-SDM.txt
+  rel-eps-f:		1.00001e-05	(relative precision on objective)
+  abs-eps-f:		1.00001e-09	(absolute precision on objective)
+  input COV file:	Photowatt-SDM.cov
+  output COV file:	Photowatt-SDM.cov
+  timeout:		600s
+*******************************************************
+
+running............
+
+[32m optimization successful!
+[0m
+ f* in	[0.000147023442606,0.00014702491284]
+	(best bound)
+
+ x* =	(1.03052020484 ; 3.48287904343 ; 48.6435574734 ; 1.20123680201 ; 9.8126369078)
+	(best feasible point)
+
+ relative precision on f*:	9.99999999973e-06[32m [passed] [0m
+ absolute precision on f*:	1.47023442602e-09
+ cpu time used:			2.00000000001e-06s [total=38924.9933911]
+ number of cells:		0 [total=44525540]
+
+ results written in Photowatt-SDM.cov
+ (old file saved in Photowatt-SDM.cov~)
+
+************************ setup ************************
+  file loaded:		Photowatt-SDM.txt
+  rel-eps-f:		1.00001e-09	(relative precision on objective)
+  abs-eps-f:		1.00001e-13	(absolute precision on objective)
+  input COV file:	Photowatt-SDM.cov
+  output COV file:	Photowatt-SDM.cov
+  timeout:		600s
+*******************************************************
+
+running............
+
+[32m optimization successful!
+[0m
+ f* in	[0.000147024912693,0.00014702491284]
+	(best bound)
+
+ x* =	(1.03052020484 ; 3.48287904343 ; 48.6435574734 ; 1.20123680201 ; 9.8126369078)
+	(best feasible point)
+
+ relative precision on f*:	9.99999654552e-10[32m [passed] [0m
+ absolute precision on f*:	1.47024861904e-13
+ cpu time used:			1.99999999999e-06s [total=38924.9933931]
+ number of cells:		0 [total=44525540]
+
+ results written in Photowatt-SDM.cov
+ (old file saved in Photowatt-SDM.cov~)

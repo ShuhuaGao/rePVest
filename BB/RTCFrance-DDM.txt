@@ -1,0 +1,33 @@
+Constants
+    N = 26;// number of measures
+    // Data for output voltage in V
+    Vl[N] = (-0.2057; -0.1291; -0.0588; 0.0057; 0.0646; 0.1185; 0.1678; 0.2132; 0.2545;
+        0.2924; 0.3269; 0.3585; 0.3873; 0.4137; 0.4373; 0.459; 0.4784; 0.496; 0.5119;
+        0.5265; 0.5398; 0.5521; 0.5633; 0.5736; 0.5833; 0.59);
+    // Data for output current in A
+    I[N] = (0.764; 0.762; 0.7605; 0.7605; 0.76; 0.759; 0.757; 0.757; 0.7555; 0.754;
+    0.7505; 0.7465; 0.7385; 0.728; 0.7065; 0.6755; 0.632; 0.573; 0.499; 0.413;
+    0.3165; 0.212; 0.1035; -0.01; -0.123; -0.21);
+    k = 1.3806503*1e-23;// Boltzmann constant in J/K
+    T = 33 + 273.15;// Cell temperature in K
+    q = 1.60217646*1e-19;// Magnitude of charge on an electron in C
+    
+Variables
+    Iph in [0,1];// Photo-generated current in A
+    I01 in [0,1];// Reverse saturation current in uA (first diode)
+    I02 in [0,1];// Reverse saturation current in uA (second diode)
+    n1 in [1,2];// Diode ideality factor (first diode)
+    n2 in [1,2];// Diode ideality factor (second diode)
+    Rs in [0,0.5];// Series resistance in ohm
+    Rp in [0,1];// Shunt resistance in hundred-ohm
+
+function Id(VL, IL, Isd, Rs, n)
+    return Isd*1e-6*(exp(q*(VL+Rs*IL)/(n*k*T)) - 1);
+end
+
+function fIL(VL, IL, Iph, I01, I02, n1, n2, Rs, Rp)
+    return Iph - Id(VL, IL, I01, Rs, n1) - Id(VL, IL, I02, Rs, n2) - (VL + Rs*IL)/(100*Rp);
+end
+
+Minimize
+    sum(i = 1:N, (I(i) - fIL(Vl(i), I(i), Iph, I01, I02, n1, n2, Rs, Rp))^2);
