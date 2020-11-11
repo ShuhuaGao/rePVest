@@ -1,0 +1,51 @@
+
+************************ setup ************************
+  file loaded:		RTCFrance-SDM.txt
+  output COV file:	RTCFrance-SDM.cov
+  timeout:		20000s
+*******************************************************
+
+running............
+
+[32m optimization successful!
+[0m
+ f* in	[2.51783799567e-05,2.52783799567e-05]
+	(best bound)
+
+ x* =	(0.760779120136 ; 0.322873926858 ; 1.48113747635 ; 0.0363792207867 ; 0.537009537057)
+	(best feasible point)
+
+ relative precision on f*:	0.0039716614084
+ absolute precision on f*:	1e-07[32m [passed] [0m
+ cpu time used:			13547.4265971s
+ number of cells:		14077996
+
+ results written in RTCFrance-SDM.cov
+ (old file saved in RTCFrance-SDM.cov~)
+
+************************ setup ************************
+  file loaded:		RTCFrance-SDM.txt
+  rel-eps-f:		1.00001e-09	(relative precision on objective)
+  abs-eps-f:		1.00001e-13	(absolute precision on objective)
+  input COV file:	RTCFrance-SDM.cov
+  output COV file:	RTCFrance-SDM.cov
+  timeout:		200s
+*******************************************************
+
+running............
+
+[32m optimization successful!
+[0m
+ f* in	[2.52783798567e-05,2.52783799567e-05]
+	(best bound)
+
+ x* =	(0.760779120136 ; 0.322873926858 ; 1.48113747635 ; 0.0363792207867 ; 0.537009537057)
+	(best feasible point)
+
+ relative precision on f*:	3.95594952778e-09
+ absolute precision on f*:	9.99999948571e-14[32m [passed] [0m
+ cpu time used:			2.00000000001e-06s [total=13547.4265991]
+ number of cells:		0 [total=14077996]
+
+ results written in RTCFrance-SDM.cov
+ (old file saved in RTCFrance-SDM.cov~)
