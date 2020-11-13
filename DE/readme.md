@@ -1,5 +1,5 @@
 # Source code for simple differential evolution (DE)
-The DE algorithm is implemented with the  [Julia](https://julialang.org/) language (version 1.5.0 or higher). We write the code in [ Jupyter notebook](https://github.com/JuliaLang/IJulia.jl) for enhanced readability. Some technical details are also explained in the notebook.
+The DE algorithm is implemented with the  [Julia](https://julialang.org/) language (version 1.5.0 or higher). We write the code in [ Jupyter notebook](https://github.com/JuliaLang/IJulia.jl) for enhanced readability. Some technical details are also explained in the notebook. The core DE algorithm is implemented in our another package [DifferentialEvolution.jl](https://github.com/ShuhuaGao/DifferentialEvolution.jl) (it will be installed automatically if you follow the steps below).
 ## Overview of files in the *src* directory
 - models.jl: 
 
