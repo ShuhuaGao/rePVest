@@ -1,5 +1,6 @@
 # rePVest
-Code for the paper: Rethinking solar photovoltaic parameter estimation: do we need more metaheuristics?
+Code for the paper: Rethinking solar photovoltaic parameter estimation:  global optimality analysis and
+a simple efficient differential evolution method
 
 
 
