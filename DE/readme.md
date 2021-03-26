@@ -4,7 +4,8 @@ The DE algorithm is implemented with the  [Julia](https://julialang.org/) langua
 - models.jl: 
 
 Julia code in a text file that defines the single- and double- diode models as well as functions to compute the SSE and RMSE. These functions are used in the notebook below.
-- DE.ipynb
+- DE.ipynb (main notebook)
+- DE_convergence.ipynb (notebook devoted to DE convergence curves)
 
 Julia code written with Jupyter notebook that produces all DE results and figures in our paper.
 - The *data* subfolder contains the two benchmark datasets.
