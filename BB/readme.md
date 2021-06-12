@@ -18,9 +18,9 @@ The [`IbexOpt`](http://www.ibex-lib.org/doc/optim.html#optim) solver was used. T
 	+ Result: Photowatt-DDM.result
 
 ## Other files
-- ./**visualization interval BB.ipynb**: used to generate the estimated curves using the parameters optimized by BB
-- ./img/**BB_PW.pdf**: curve for PW
-- ./img/**BB_RT.pdf**: curve for RT
+- ./**visualization interval BB.ipynb**: used to generate the estimated curves using the parameters optimized by BB. The curves are placed in the [./img](./img) subfolder as follows.
+  - ./img/**BB_PW.pdf**: curve for PW
+  - ./img/**BB_RT.pdf**: curve for RT
   
 ## Note
 + The direct objective for optimization is the sum of squared error (SSE), while the RMSE is computed manually after optimization finishes.
