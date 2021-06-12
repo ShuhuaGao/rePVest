@@ -16,10 +16,14 @@ You can view these files directly on GitHub just by clicking them, e.g., the pre
 1. Make sure that you have the Julia language (version >= 1.5.0) and the [IJulia](https://github.com/JuliaLang/IJulia.jl) kernel for Jupyter notebook installed.
 2. Download or clone this [rePVest](https://github.com/ShuhuaGao/rePVest) repository into your local PC.
 3. Change into the *rePVest* root folder and launch the Julia REPL there.
-4. Instantiate the Julia environment as specified by our *Project.toml*  and *Manifest.toml* by typing the following command in Julia REPL
-```julia-repl
-]instantiate
-```
+4. Activate the current environment *rePVest* by 
+   ```julia-repl
+   ]activate .
+   ```
+5. Instantiate the above Julia environment as specified by our *Project.toml*  and *Manifest.toml* by typing the following command in Julia REPL
+    ```julia-repl
+    ]instantiate
+    ```
 During the instantiation process, all required packages will be installed automatically.
 
 5. In another terminal like Windows PowerShell, change into the *DE/src* subfolder , and launch Jupyter notebook by `jupyter notebook`. Then the notebook file`DE.ipynb` can be opened and run there. 
