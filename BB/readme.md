@@ -1,13 +1,15 @@
 # Source code related to interval B&B
 The [`IbexOpt`](http://www.ibex-lib.org/doc/optim.html#optim) solver was used. This solver accepts an optimization problem written its own [*Minibex*](http://www.ibex-lib.org/doc/minibex.html) language. We provide the *Minibex* files for the four case studies in this folder. Additionally, since `IbexOpt` will take a very long time  (quite a few hours) to get each result, we also provide the results we have obtained here that correspond to Table 2 and Table 3 in the paper.
-## SDM
+
+## Source files and results of *ibexopt*
+### SDM
 - RTC France
 	+ Source: RTCFrance-SDM.txt
 	+ Result: RTCFrance-SDM.result 
 - Photowatt-PWP201
 	+ Source: Photowatt-SDM.txt
 	+ Result: Photowatt-SDM.result
-## DDM
+### DDM
 - RTC France
 	+ Source: RTCFrance-DDM.txt
 	+ Result: RTCFrance-DDM.result
@@ -15,6 +17,11 @@ The [`IbexOpt`](http://www.ibex-lib.org/doc/optim.html#optim) solver was used. T
 	+ Source: Photowatt-DDM.txt
 	+ Result: Photowatt-DDM.result
 
+## Other files
+- ./**visualization interval BB.ipynb**: used to generate the estimated curves using the parameters optimized by BB
+- ./img/**BB_PW.pdf**: curve for PW
+- ./img/**BB_RT.pdf**: curve for RT
+  
 ## Note
 + The direct objective for optimization is the sum of squared error (SSE), while the RMSE is computed manually after optimization finishes.
 + To set up similar scales among these model parameters, the unit for `Rp` in optimization is `100 Ω`.
