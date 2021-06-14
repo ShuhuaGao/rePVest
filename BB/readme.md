@@ -31,6 +31,9 @@ The [`IbexOpt`](http://www.ibex-lib.org/doc/optim.html#optim) solver was used. T
 ```
 	ibexopt -t15000 RTCFrance-SDM.txt -r1e-9 -a1e-13
 ```
+
+3. To run ./**visualization interval BB.ipynb**, please follow the instructions in the [DE](../DE) folder. 
+   
 ## Additional notes
 + The extension of the *Minibex* file is arbitrary. The *Minibex* file as well as the *result* file are just raw text files and can be opened with any text editor.
 + `ibexopt` can be warm started with the `-i` option, as we have done in our study. That is, we can first execute `ibexopt` for a short time, say, one hour, and see whether the result is satisfactory. If not, then we can continue right from where it stopped by specifying the COV file generated in the previous run as the input COV file into the current run.
