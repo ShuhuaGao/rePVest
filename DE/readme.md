@@ -32,9 +32,6 @@ During the instantiation process, all required packages will be installed automa
 (You may also follow the instructions given by [IJulia](https://github.com/JuliaLang/IJulia.jl) to start the Jupyter notebook.)
 
 ## How to run the code online
-The great [binder](https://mybinder.org/) service supports execution of Jupyter notebooks online. You can check and run our *DE.ipynb* directly with binder online by clicking the following badge.
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ShuhuaGao/rePVest/HEAD)
-
-and then open the *DE/src/DE.ipynb* file.
+The great [binder](https://mybinder.org/) service supports execution of Jupyter notebooks online. You can check and run our repository directly with binder online.
 
 Note however that the cloud PC configuration and the installed Julia version in binder are different from ours. Thus, it is expected that the results and the measured running time differ from our reported ones. 
