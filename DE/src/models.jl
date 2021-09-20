@@ -78,3 +78,54 @@ function calculate_rmse(data, θ, T)
     model = length(θ) == 5 ? model_sdm : model_ddm
     return calculate_rmse(data, (V, I)->model(V, I, θ..., T))
 end
+
+
+"""
+	Compute the mean bias error (MBE)
+	
+data: a matrix of V-I data, each row denoting a (V, I) point
+model: a function for the SDM or the DDM, whose input is (V, I) and output is the estimated current
+"""
+function calculate_mbe(data, model::Function)
+    mbe = 0.0
+    for (Vm, Im) in eachrow(data)
+        Ic = model(Vm, Im)
+        mbe += (Im - Ic)
+    end
+    return mbe / size(data, 1)
+end
+
+
+"""
+	Compute the mean absolute percentage error (MAPE). 
+
+See https://en.wikipedia.org/wiki/Mean_absolute_percentage_error for a definition.
+	
+data: a matrix of V-I data, each row denoting a (V, I) point
+model: a function for the SDM or the DDM, whose input is (V, I) and output is the estimated current
+"""
+function calculate_mape(data, model::Function)
+    mape = 0.0
+    for (Vm, Im) in eachrow(data)
+        Ic = model(Vm, Im)
+        d = abs((Im - Ic) / Im)
+        # @show d
+        mape += d
+    end
+    return mape / size(data, 1) * 100
+end
+
+"""
+	Compute the mean absolute error (MAE)
+	
+data: a matrix of V-I data, each row denoting a (V, I) point
+model: a function for the SDM or the DDM, whose input is (V, I) and output is the estimated current
+"""
+function calculate_mae(data, model::Function)
+    mae = 0.0
+    for (Vm, Im) in eachrow(data)
+        Ic = model(Vm, Im)
+        mae += abs(Im - Ic)
+    end
+    return mae / size(data, 1)
+end
