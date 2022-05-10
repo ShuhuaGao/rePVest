@@ -1,6 +1,8 @@
 # Source code for simple differential evolution (DE)
 
-The DE algorithm is implemented with the  [Julia](https://julialang.org/) language. We have used Julia 1.6.2, but any version in the 1.6 series should work. We write the code in [Jupyter notebook](https://github.com/JuliaLang/IJulia.jl) for enhanced readability. Some technical details are also explained in the notebook. The core DE algorithm is implemented in our another package [DifferentialEvolution.jl](https://github.com/ShuhuaGao/DifferentialEvolution.jl) (it will be installed automatically if you follow the steps below).
+The DE algorithm is implemented with the  [Julia](https://julialang.org/) language in view of its speed. We have used Julia 1.6.2, but any version in the 1.6 series should work. We write the code in [Jupyter notebook](https://github.com/JuliaLang/IJulia.jl) for enhanced readability. Some technical details are also explained in the notebook. The core DE algorithm is implemented in our another package [DifferentialEvolution.jl](https://github.com/ShuhuaGao/DifferentialEvolution.jl) (it will be installed automatically if you follow the steps below).
+
+**Note that, for a fair runtime comparison, we also implement the DE algorithm in MATLAB (since the code of competing methods is in MATLAB) to measure and report the wall time in the paper.**
 
 ## Overview of files in the *src* directory
 
@@ -47,3 +49,5 @@ Note however that the cloud PC configuration and the installed Julia version in 
 ## MATLAB implementation
 
 A MATLAB implementation of the simple DE method is provided in the "DE/matlab" subfolder mainly for runtime comparison purposes.
+
+
